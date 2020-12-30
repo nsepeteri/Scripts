@@ -2,7 +2,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-!Diagram/azure_framework.jpg
+Diagram/azure_framework.jpg
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the azure_framewrok.jpg may be used to install only certain pieces of it, such as Filebeat.
 
@@ -32,14 +32,13 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 
 The configuration details of each machine may be found below.
 
-
-| Name      | Function   | LAN IP      | Public IP      | Operating System |
-|-----------|------------|-------------|-----------------------------------|
-| Jump Box  | Gateway    | 10.0.1.4    |  52.142.56.99  |   Linux          |
-| ELK Server| Monitoring | 10.1.1.4    |  52.177.124.97 |   Linux          |
-| Web 1     | DVWA       | 10.0.1.5    |  N/A           |   Linux          |
-| Web 2     | DVWA       | 10.0.1.6    |  N/A           |   Linux          |
-| Web 3     | DVWA       | 10.0.1.7    |  N/A           |   Linux          |
+| Name      | Function   | LAN IP      | Operating System |
+|-----------|------------|-------------|------------------|
+| Jump Box  | Gateway    | 10.0.1.4    |   Linux          |
+| ELK Server| Monitoring | 10.1.1.4    |   Linux          |
+| Web 1     | DVWA       | 10.0.1.5    |   Linux          |
+| Web 2     | DVWA       | 10.0.1.6    |   Linux          |
+| Web 3     | DVWA       | 10.0.1.7    |   Linux          |
 
 ### Access Policies
 
@@ -83,7 +82,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-!Images/elk.jpg)
+Images/elk.jpg
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
