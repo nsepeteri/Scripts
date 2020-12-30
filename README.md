@@ -32,7 +32,7 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 
 The configuration details of each machine may be found below.
 
-----------------------------------------------------------------------------
+
 | Name      | Function   | LAN IP      | Public IP      | Operating System |
 |-----------|------------|-------------|-----------------------------------|
 | Jump Box  | Gateway    | 10.0.1.4    |  52.142.56.99  |   Linux          |
@@ -40,7 +40,6 @@ The configuration details of each machine may be found below.
 | Web 1     | DVWA       | 10.0.1.5    |  N/A           |   Linux          |
 | Web 2     | DVWA       | 10.0.1.6    |  N/A           |   Linux          |
 | Web 3     | DVWA       | 10.0.1.7    |  N/A           |   Linux          |
-----------------------------------------------------------------------------
 
 ### Access Policies
 
@@ -54,7 +53,6 @@ Machines within the network can only be accessed by jump box.
 
 A summary of the access policies in place can be found in the table below.
 
----------------------------------------------------------------------
 | Name       | Publicly Accessible     | Allowed IP Addresses       |
 |------------|-------------------------|----------------------------|
 | Jump Box   | Yes                     | 10.0.1.0/24, 10.1.1.0/2    |
@@ -69,7 +67,7 @@ A summary of the access policies in place can be found in the table below.
 | Web 1      | No                      | 10.0.1.0/24 10.1.1.0/24    |
 | Web 2      | No                      | 10.0.1.0/24 10.1.1.0/24    |
 | Web 3      | No                      | 10.0.1.0/24 10.1.1.0/24    |
----------------------------------------------------------------------
+
 
 ### Elk Configuration
 
