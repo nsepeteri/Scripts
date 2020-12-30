@@ -99,7 +99,7 @@ In order to use the playbook, you will need to have an Ansible control node alre
 
 SSH into the control node and follow the steps below:
 - Copy the elk_script.yml file to /etc/ansible/roles
-- Update the "/etc/ansible/hosts" file to include Web VMs IP addresses
+- Update the "/etc/ansible/hosts" file to include Web VMs and ELK server IP addresses
 - Run the playbook and navigate to http://52.177.124.97:5601/ to check that the installation worked as expected.
 
 Answer the following questions:
