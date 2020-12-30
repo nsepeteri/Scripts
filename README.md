@@ -21,9 +21,9 @@ This document contains the following details:
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
-Load balancing ensures that the application will be highly accessible, in addition to restricting access to the network.
+Load balancing ensures that the web application will be highly accessible, in addition to restricting access to anything else on the network.
 
-Load balancing provides relibale and redundant access to webservers, and mitigates risks of DDOS aatacks. Jump box provides secure and reliable access to the network via SSH. We used public keys to mitigate risks of brute force attacks.
+Load balancing provides reliable and redundant access to webservers and mitigates risks of DDOS attacks. Jump box provides secure and reliable access to the network via SSH. We used public keys to mitigate risks of brute force attacks.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the resources, and system files.
 
@@ -71,7 +71,7 @@ A summary of the access policies in place can be found in the table below.
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because
-deployment is automated, fast, and allows to be executed on multiple hosts simulteneously.
+deployment is automated, fast, and allows to be executed on multiple hosts simultaneously.
 
 The playbook implements the following tasks:
 - Install docker.io
@@ -92,7 +92,7 @@ We have installed the following Beats on these machines:
 - Filebeat, Metricbeat
 
 These Beats allow us to collect the following information from each machine:
-- Filebeat collects log events, and forwards them to ELK stack. Metricbeat records system-level CPU usage, memory, file system, disk IO, and network IO statistics, as well as top-like statistics for every process running on the system, and sends them to Elasticsearch.
+- Filebeat collects log events and forwards them to ELK stack. Metricbeat records system-level CPU usage, memory, file system, disk IO, and network IO statistics, as well as top-like statistics for every process running on the system and sends them to Elasticsearch.
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
@@ -100,7 +100,7 @@ In order to use the playbook, you will need to have an Ansible control node alre
 SSH into the control node and follow the steps below:
 - Copy the elk_script.yml file to /etc/ansible/roles
 - Update the "/etc/ansible/hosts" file to include Web VMs IP addresses
-- Run the playbook, and navigate to http://52.177.124.97:5601/ to check that the installation worked as expected.
+- Run the playbook and navigate to http://52.177.124.97:5601/ to check that the installation worked as expected.
 
 Answer the following questions:
 - Which file is the playbook? elk_script.yml Where do you copy it? /etc/ansible/roles/
