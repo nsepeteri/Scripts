@@ -2,7 +2,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-![Network Diagram](https://github.com/nsepeteri/Scripts/blob/main/Diagram/azure_framework.jpg?raw=true)
+![Network Diagram](https://github.com/nsepeteri/Scripts/blob/main/Diagram/azure_framework.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the Scripts may be used to install only certain pieces of it, such as Filebeat.
 
